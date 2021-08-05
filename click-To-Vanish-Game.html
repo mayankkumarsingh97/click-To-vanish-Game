@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>click to vanish game using JS</title>
+    </head>
+    <style>
+        body{
+            font-size: 3rem;
+            display: flex; justify-content: center; align-items: center;height: 100vh;
+        }
+        #box span{
+            display: inline-block;
+        }
+        #box{
+            height: 20px;min-width: 400px; font-size: 2.5rem;cursor:pointer;
+        }
+        .abc{
+            /* filter: blur(10px) saturate(200%); */
+            filter: hue-rotate(360deg);
+            /* filter: blur(20px); */
+            color: teal;
+            animation: ani 3s linear infinite .4s;
+            font-size: 97px;
+            font-style: oblique;
+
+        }
+
+        @keyframes ani{
+            0%{
+                transform: translateY(150px);
+            }
+            90%{
+                transform: translateY(-390px);
+                filter: brightness(200%);
+                
+            }
+            100%{
+                filter: blur(30px);
+            }
+        }
+        .NoVisi{
+            visibility: hidden;
+            
+        }
+    </style>
+    <body>
+        
+  <div id="box">
+      <span id="red">M</span>
+      <span id="green" style="color: green;">A</span>
+      <span id="cyan" style="color: cyan">Y</span>
+      <span id="blue" style="color:blue">A</span>
+      <span id="aquamarine"  style="color: aquamarine">N</span>
+      <span id="aqua" style="color: aqua;">K</span>
+      <span id="01" style="color: rgb(94, 199, 33);">U</span>
+      <span id="02" style="color: rgb(17, 29, 54);">M</span>
+      <span id="03" style="color: aqua;">A</span>
+      <span id="04" style="color: rgb(59, 190, 19);">R</span>
+      <span id="05" style="color: rgb(119, 16, 16);">S</span>
+      <span id="06" style="color: rgb(59, 190, 19);">I</span>
+      <span id="07" style="color: rgb(18, 109, 136);">N</span>
+      <span id="08" style="color: rgb(3, 194, 45);">G</span>
+      <span id="09" style="color: rgb(53, 5, 109);">H</span>
+      
+  </div>
+<script>
+     document.getElementById('red').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('green').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('cyan').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('blue').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('aqua').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('01').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('02').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('03').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('04').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('aquamarine').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('05').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('06').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('07').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('08').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     document.getElementById('09').onmouseenter=function(){
+         this.classList.add("abc");
+     }
+     
+
+
+
+</script>
+
+<script>
+
+document.getElementById('red').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('green').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('cyan').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('blue').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('aqua').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('01').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('02').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('03').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('04').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('aquamarine').onclick=function(){
+         this.className="NoVisi";
+     }
+
+     document.getElementById('05').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('06').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('07').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('08').onclick=function(){
+         this.className="NoVisi";
+     }
+     document.getElementById('09').onclick=function(){
+         this.className="NoVisi";
+     }
+</script>
+
+    </body>
+</html>
